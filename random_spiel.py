@@ -1,5 +1,9 @@
+import random
+import math
+
+
 print("Welcome to ramba game ")
-number = 7
+number = random.randint(0, 10)
 essaies = 4
 a = 0
 while(a<=essaies):
@@ -10,4 +14,4 @@ while(a<=essaies):
             print("You have won")
             exit()
         a += 1
-print("You have lost and the mytery number was 7")
+print(f"You have lost and the mytery number was {number}")
