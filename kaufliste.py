@@ -31,10 +31,9 @@ while(int(a)<=4):
     elif int(a) == 2:
         element = input("Entrez le nom de l'element à retirer: ")
         if element in kaufliste:
-            kaufliste.remove(element)
+             kaufliste.remove(element)
         else:
-            a = input("L'élément que vous voulez enlever n'existe pas dans votre liste.\nVeuillez entrer le nom d'un elelment correct: ")
-            kaufliste.remove(a)
+             element = input("L'élément que vous voulez enlever n'existe pas dans votre liste.\nVeuillez entrer le nom d'un elelment correct: ")
     elif int(a) == 3:
         if(len(kaufliste) != 0):
             i = 0
