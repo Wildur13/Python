@@ -10,6 +10,7 @@ class App(QtWidgets.QWidget):
         self.setup_cine()
         self.populate_movies()
         self.setup_connections()
+        self.setup_css()
 
     def setup_cine(self):
         self.layout = QtWidgets.QVBoxLayout(self)
@@ -28,6 +29,22 @@ class App(QtWidgets.QWidget):
         self.btn_ajout.clicked.connect(self.add_movie)
         self.btn_retrait.clicked.connect(self.remove_movies)
         self.edit.returnPressed.connect(self.add_movie)
+
+    def setup_css(self):
+        self.setStyleSheet("""
+            background-color: gray;
+            color: white;
+        """)
+        self.edit.setStyleSheet("""
+            background-color: white;
+            color: black;
+        """)
+        self.movies_liste.setStyleSheet("""
+            background-color: white;
+            color: blue;
+            font-weight: bold;
+            font-family: 'Montserrat', sans-serrif;
+        """)
 
     def populate_movies(self):
         movies = get_movies()
