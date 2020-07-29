@@ -4,7 +4,7 @@ class Voiture:
         Voiture.compte += 1
         self.marque = marque
 
-voiture_01 = Voiture("Pegeot")
+voiture_01 = Voiture("Peugeot")
 voiture_02 = Voiture("Lamborghini")
 
 print(Voiture.compte)
