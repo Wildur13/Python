@@ -2,8 +2,8 @@ import json
 import os
 import logging
 
-
-chemin_1 = "C:/Users/Willy Durand Wakam/Desktop/Uni/Python/Python/Cine/data/movies.json"
+chemin = os.path.dirname(__file__)
+chemin_1 = os.path.join(chemin, "data", "movies.json")
 
 def get_movies():
     with open(chemin_1, "r") as f:
